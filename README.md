@@ -31,7 +31,7 @@ cd where/I/want/
 2) Paste the following line into your terminal and press the `Enter (^M)` key:
 
 ```bash
-curl https://github.com/happycod3r/zsh-toggles.git
+curl https://github.com/happycod3r/zsh-toggle.git
 ```
 
 ---
