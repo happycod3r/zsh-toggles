@@ -1,12 +1,5 @@
 # Zsh Toggles v1.1.0
 
-   __      __     __
- _ \ \    / / _  / /
-(_) | |  / / (_)| | 
- _  | | / /   _ | | 
-(_) | |/_/   (_)| | 
-   /_/           \_\
-
 ## [Table Of Contents](#table_of_contents)
 
 - [About](#about)
