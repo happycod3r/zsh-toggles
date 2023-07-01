@@ -1,8 +1,6 @@
 
-# ZSH-TOGGLES v1.0.0
+# ZSH-TOGGLES v1.0.0 - Toggles the value of an existing variable in a file
 #
-# Toggles the value of an existing variable in a file
-
 # In the file that contains the variable(s) that you want to toggle.
 # The variable that you want to toggle should ...
 #    a) be on a line of its own.
@@ -15,7 +13,14 @@
 #        - export $MY_VAR=false       export statement, no quotes.
 #    c) be initialized with a value such as true|false, on|off, 1|0, yes|no John|Amy etc. 
 #
-
+           ##                           ##   
+            ##          ##             ##    
+   ##        ##        ##     ##      ##     
+             ##       ##              ##     
+             ##      ##               ##     
+   ##       ##      ##        ##       ##    
+           ##      ##                   ##   
+                                           
 function zsh-toggles(){
     
     if [[ -z "$1" || -z "$2" ]]; then
