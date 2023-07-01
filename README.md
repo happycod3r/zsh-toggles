@@ -38,6 +38,15 @@ curl https://github.com/happycod3r/zsh-toggles.git
 
 ## [Usage](#usage)
 
+### Parmeters for zsh-toggle()
+
+- arg1: `EXPORT`     [true|false]   Whether the variable has an `export` statement or not. Default is ***'false'***
+- arg2: `DQUOTES`    [true|false]   Whether the variable has double quotes, single quotes or none. Default is ***'true'***
+- arg3: `VAR_NAME`   [string]       The name of the variable
+- arg4: `VALUE`      [string]       The current value of the variable
+- arg5: `ALT_VALUE`  [string]       The alternte value for the variable
+- arg6: `FILE_PATH`  [string]       The fully qualified path to the file containing the variable
+
 In the file that contains the variable(s) that you want to toggle.
 The variable that you want to toggle should ...
 - be on a line of its own.
@@ -53,14 +62,62 @@ The variable that you want to toggle should ...
 The variable you are toggling should be initialized in its 
 file already with either VALUE or ALT_VALUE otherwise it won't work.
 For example if you set
+
+```bash
 VALUE="yes"
 ALT_VALUE="no" 
-then in the file @ FILE_PATH the variable should be initialized 
-with either "yes" or "no". ex. MY_VAR="yes" or MY_VAR="no"
-The same with the other options too. If you set DQUOTES to true then the 
-variable value should be wrapped in double quotes already in the file.
-Your basically describing the variable with these options
+```
 
+then in the file @ `FILE_PATH` the variable should be initialized 
+with either **"yes"** or **"no"**. ex. `MY_VAR="yes"` or `MY_VAR="no"`
+The same with the other options too. If you set `DQUOTES` or `EXPORT` to 
+**"true"** then the variable value should be wrapped in double quotes
+and/or be exported already in the file. Your basically describing the 
+variable with these options
+
+### Another example: 
+
+If you call `zsh-toggle` like this
+
+```bash
+zsh-toggle false true TEST "false" "true" "$(pwd)/test.conf"
+```
+
+then the variable in the file your pointing at with the last argument should look like this:
+
+```bash
+TEST="false"
+# or
+TEST="true"
+```
+
+If you call `zsh-toggle` like this
+
+```bash
+zsh-toggle true false TEST "on" "off" "$(pwd)/test.conf"
+```
+
+then the variable in the file your pointing at with the last argument should look like this:
+
+```bash
+export TEST='on'
+# or
+export TEST='off'
+```
+
+You can also call `zsh-toggle` passing `"none"` for the 2nd argument to use no quotes like this:
+
+```bash
+zsh-toggle false none TEST "false" "true" "$(pwd)/test.conf"
+```
+
+In this case the variable in the file your pointing at with the last argument should look like this:
+
+```bash
+TEST=false
+# or
+TEST=true
+```
 ---
 
 ## [Contributing](#contributing)

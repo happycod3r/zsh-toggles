@@ -1,7 +1,7 @@
 
 
-if [[ -f "$(pwd)/zsh-toggles.zsh" ]]; then 
-    builtin source $(pwd)/zsh-toggles.zsh
+if [[ -f "$(pwd)/zsh-toggle.zsh" ]]; then 
+    builtin source $(pwd)/zsh-toggle.zsh
 fi
 
 
@@ -15,4 +15,4 @@ fi
     # alt_value: The value that you want to switch back and forth to
     # f_path: The absolute path to the file containing the variable.
 
-zsh-toggles false "none" TEST "false" "true" "$(pwd)/test.conf"
+zsh-toggle false true TEST "false" "true" "$(pwd)/test.conf"
