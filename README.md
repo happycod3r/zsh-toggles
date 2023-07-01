@@ -42,12 +42,12 @@ In the file that contains the variable(s) that you want to toggle.
 The variable that you want to toggle should ...
 a) be on a line of its own.
 b) be only one of the following formats: 
-  - $MY_VAR="true"             no export statement, double quotes
-  - $MY_VAR='true'             no export statement, single quotes.
-  - $MY_VAR=true               no export statement, no quotes.
-  - export $MY_VAR="true"      export statement, double quotes
-  - export $MY_VAR='false'     export statement, single quotes.
-  - export $MY_VAR=false       export statement, no quotes.
+  - `$MY_VAR="true"`             no export statement, double quotes
+  - `$MY_VAR='true'`             no export statement, single quotes.
+  - `$MY_VAR=true`               no export statement, no quotes.
+  - `export $MY_VAR="true"`      export statement, double quotes
+  - `export $MY_VAR='false'`     export statement, single quotes.
+  - `export $MY_VAR=false`       export statement, no quotes.
 c) be initialized with a value such as true|false, on|off, 1|0, yes|no John|Amy etc.
 
 The variable you are toggling should be initialized in its 
