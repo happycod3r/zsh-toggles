@@ -1,5 +1,5 @@
 
-# ZSH-TOGGLES v1.0.0 - Toggles the value of an existing variable in a file
+# ZSH-TOGGLE v1.0.0 - Toggles the value of an existing variable in a file
 #
 # In the file that contains the variable(s) that you want to toggle.
 # The variable that you want to toggle should ...
@@ -21,7 +21,7 @@
    ##       ##      ##        ##       ##    
            ##      ##                   ##   
                                            
-function zsh-toggles(){
+function zsh-toggle(){
     
     if [[ -z "$1" || -z "$2" ]]; then
         cat >&2 <<EOF
