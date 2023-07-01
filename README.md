@@ -3,8 +3,6 @@
 - [About](#about)
 - [Install](#install)
 - [Usage](#usage)
-  - [Integration](#integration)
-- [Notes](#notes)
 - [Contributing](#contributing)
 - [Security](#security)
 - [Contacts](#contacts)
