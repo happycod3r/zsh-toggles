@@ -40,12 +40,24 @@ curl https://github.com/happycod3r/zsh-toggle.git
 
 ### Parmeters for zsh-toggle()
 
-- arg1: `EXPORT`     [true|false]   Whether the variable has an `export` statement or not. Default is ***'false'***
-- arg2: `DQUOTES`    [true|false]   Whether the variable has double quotes, single quotes or none. Default is ***'true'***
-- arg3: `VAR_NAME`   [string]       The name of the variable
-- arg4: `VALUE`      [string]       The current value of the variable
-- arg5: `ALT_VALUE`  [string]       The alternte value for the variable
-- arg6: `FILE_PATH`  [string]       The fully qualified path to the file containing the variable
+- arg1: `EXPORT`
+    - [true|false]   
+    - Whether the variable has an `export` statement or not. Default is ***'false'***
+- arg2: `DQUOTES`    
+    - [true|false|none]   
+    - Whether the variable has double quotes, single quotes or none. Default is ***'true'***
+- arg3: `VAR_NAME`
+    - [string]
+    - The name of the variable
+- arg4: `VALUE`
+    - [string]
+    - The current value of the variable
+- arg5: `ALT_VALUE`
+    - [string]
+    - The alternte value for the variable
+- arg6: `FILE_PATH`
+    - [string]
+    - The fully qualified path to the file containing the variable
 
 In the file that contains the variable(s) that you want to toggle.
 The variable that you want to toggle should ...
