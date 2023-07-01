@@ -1,5 +1,5 @@
 # Zsh Toggles v1.1.0
-
+  
 ## [Table Of Contents](#table_of_contents)
 
 - [About](#about)
@@ -15,6 +15,8 @@
 
 Zsh-Toggle is a function that will allow you to toggle the value of a variable in a file.
 If you want to let a user turn an option on or off in your program you can do it easily with Zsh-Toggle. 
+
+![Example](res/example.gif)
 
 --- 
 
@@ -60,16 +62,17 @@ curl https://github.com/happycod3r/zsh-toggle.git
     - The fully qualified path to the file containing the variable
 
 In the file that contains the variable(s) that you want to toggle.
-The variable that you want to toggle should ...
+The variable should ...
 - be on a line of its own.
 - be only one of the following formats: 
   - `$MY_VAR="true"`             no export statement, double quotes
   - `$MY_VAR='true'`             no export statement, single quotes.
   - `$MY_VAR=true`               no export statement, no quotes.
   - `export $MY_VAR="true"`      export statement, double quotes
-  - ` export $MY_VAR='false'`     export statement, single quotes.
+  - `export $MY_VAR='false'`     export statement, single quotes.
   - `export $MY_VAR=false`       export statement, no quotes.
 - be initialized with a value such as true|false, on|off, 1|0, yes|no John|Amy etc.
+- It can be any two values that you want to toggle between.
 
 The variable you are toggling should be initialized in its 
 file already with either VALUE or ALT_VALUE otherwise it won't work.
