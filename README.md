@@ -4,6 +4,10 @@
 
 - [About](#about)
 - [Install](#install)
+  - [Manual Install](#manual_install)
+  - [Command Line Install](#command_line_install)
+    - [Using Curl](#using_curl)
+    - [Using Git Clone](#git_clone)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [Security](#security)
@@ -22,7 +26,30 @@ If you want to let a user turn an option on or off in your program you can do it
 
 ## [Install](#install)
 
-To download and install Zsh-Toggle follow these steps
+To download and install zsh-toggles follow choose an install method and follow the corresponding steps. Once
+fininshed jump to the [Usage](#usage) section.
+
+### [Manual Install](#manual_install)
+
+1. Download and place the ***zsh-toggles*** folder in a location of your choosing.
+2. Next source the script as shown in the [Usage](#usage) section. 
+
+### [Command Line Install](#command_line_install)
+
+#### [Using Git Clone:](#git_clone)
+
+1) Open your terminal and navigate to the directory where you want to clone the repository: 
+
+```bash
+cd where/I/want/to/install
+```
+
+2) Next run the following command to clone the repository to the chosen location:
+```bash
+git clone https://github.com/happycod3r/zsh-toggles.git
+```
+
+#### [Using Curl:](#curl)
 
 1) Pick a directory to download it to:
 
@@ -33,7 +60,7 @@ cd where/I/want/
 2) Paste the following line into your terminal and press the `Enter (^M)` key:
 
 ```bash
-curl https://github.com/happycod3r/zsh-toggle.git
+curl https://github.com/happycod3r/zsh-toggles.git
 ```
 
 ---
